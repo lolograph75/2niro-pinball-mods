@@ -1,0 +1,371 @@
+body {
+	font-size: 1.8em;
+	color: #107600;
+	background-color: #f4ff2a;
+	font-family: 'Orbitron', sans-serif;
+	}
+
+/** Header**/
+header {
+	height: 200px;
+}
+
+#header-nav {
+	background-color: #ffffff;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img {
+	background: url('../images/logo.png') no-repeat;
+     width: 150px;
+     height: 150px;
+     margin: 5px 15px 10px 0;
+ }
+
+.navbar-brand {
+	padding-top: 25px;
+}
+
+.navbar-brand h1 {
+	font-family: 'Frijole', cursive;
+	color: #f30018 ;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+.navbar-brand a:hover, navbar-brand a:focus {
+	text-decoration: none;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a {
+	color: #f30018;
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #f68300;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+#address {
+	margin-top: 5px;
+}
+#address a {
+	color: 107600;
+	text-align: center;
+   	padding-bottom: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #107600;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -30px;
+} 
+/*  end header  */
+
+/*  footer  */
+.panel-footer {
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	border-top: 0;
+}
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#buy, #terms {
+	line-height: 2;
+}
+#buy > span, #terms > span {
+	font-size: 1.3em;
+	color: #107600;
+}
+#buy > a, #terms > a {
+	color: #107600;
+	font-size: .8em;
+	line-height: 1.8;
+}
+/*  homepage   */
+.container .jumbotron {
+	box-shadow: 0 0 50 #107600;
+	border: 2px solid #107600;
+	padding: 0px;
+}
+
+#mods-tile, #project-tile, #map-tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #107600;
+	overflow: hidden;
+}
+#mods-tile:hover, #project-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #107600;
+}
+
+#mods-tile {
+	background: url('../images/mods/flyer-saucer.jpg') no-repeat;
+	background-position: center;
+	width: 100%;
+	padding: 0;
+}
+#project-tile {
+	background: url('../images/mods/protonpack.jpg') no-repeat;
+	background-position: center;
+	width: 100;
+	padding: 0;
+}
+
+#mods-tile span, #project-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #107600;
+	color: #ffffff;
+	opacity: .8;
+}
+
+/* end homepage  */
+
+/* mods categories page */
+.category-tile {
+	position: relative;
+	border: 2px solid #107600;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #107600;
+	color: #ffffff;
+	opacity: 0.8;
+}
+.category-tile:hover {
+	box-shadow: #0 1px 5px 1px #107600;
+}
+#mods-categories-tile + div {
+	margin-bottom: 50px;
+}
+/*  end mods categories page  */
+
+/*  single category page  */
+.jumbotron {
+	background: #f4ff3a;
+}
+.mods-item-tile {
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.mods-item-tile hr {
+	width: 80%;
+}
+h2.mods-game-title {
+	font-size: 1.5em;
+}
+.mods-item-tile .mods-item-price {
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+	}
+.mods-item-tile .mods-item-price span {
+	font-size: 0.6em;
+	}
+.mods-item-photo {
+    position: relative;
+	border: 2px solid #107600;
+	overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.mods-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+	background-color: #f30018;
+	text-align: center;
+}
+.mods-item-description {
+	padding-right: 30px;
+}
+h3.mods-item-title {
+	margin: 0 0 10px;
+}
+.mods-item-details {
+	font-size: 0.9em;
+	font-style: italic;
+}
+/* end single category page  */
+}
+
+
+/* medium devices only */
+@media (min-width: 992px) and (max-width: 1199px) {
+/* header */
+  #logo-img {
+	background: url('../images/logo-medium.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0;
+ }
+ /*  extra small devices only */
+@media (max-width: 767px) {
+/* header */
+  .navbar-brand {
+	padding-top: 10px;
+	height: 80px;
+  }
+  .navbar-brand h1 {
+	padding-top: 10px;
+	font-size: 5vw;  /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a {  /*  collapsed nav menu text  */
+	font-size:1.2em;
+  }
+
+  #collapsable-nav a span {  /*  collapsed nav menu glyph  */
+	font-size: 1em;
+	margin-right: 5px;
+  }
+
+  a.btn {
+  font-size: 1.5em;
+  display: block;
+  margin: 0 20px;
+  border: 2px #107600;
+  background-color: #f4ff3a;
+  color: #f30018;
+  }
+/* end header  */
+ 
+ /*  footer  */
+ .panel-footer section {
+ 	margin-bottom: 30px;
+ 	text-align: center;
+ }
+ .panel-footer section hr {
+ 	width: 50%;
+ }
+ /*  end footer  */
+/* homepage  */
+.container .jumbotron {
+ 	margin-top: 30px;
+ 	padding: 0;
+ }
+
+ #mods-tile, #project-tile {
+ 	width: 360px;
+ 	margin: 0 auto 15px;
+ }
+
+ .mods-item-photo {
+ 	margin-right: auto;
+ }
+ .mods-item-tile .mods-item-price {
+ 	text-align: center;
+ }
+ .mods-item-description {
+ 	text-align: center;
+ }
+}
+/*  super extra small devices only  */
+@media (max-width:479px) {
+	/*  header  */
+	.navbar-brand h1 {
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	#address {
+	margin-top: 5px;
+	/*  end header  */
+
+	/*  homepage  */
+	#mods-tile, #project-tile {
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+
+	.col-xxs-12 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+	}
+}
+
+/* contact page, terms page, about page  */
+h2.about, h2.contact, h2.terms {
+    font-size: 1.5em;
+    text-align: center;
+}
+h3.terms {
+	font-size: 1.3em;
+	text-align: right;
+}
+p.about, p.contact, p.terms {
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+#firstname, #lastname, #object, #email {
+	border: 2px solid #f30018;
+	border-radius: 10px;
+}
+
+
+#contact {
+	background: #f4ff3a;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#contact-title {
+	background: #f4ff3a;
+	margin: 0;
+}
+
+.btn {
+	font-size: 1.2em;
+	font-family: 'Orbitron', sans-serif;
+	color: #f30018;
+	background: #f68300;
+	border: 2px solid #f30018;
+}
+
+
+.btn:hover {
+	background: #f4ff3a ;
+	color: #107600;
+}
+
